@@ -1,0 +1,30 @@
+Funtionality: Convert an N pages pdf whit M internal pages in a N*M PDF
+
+How to use it:
+   parameters:
+     inPDF            the PDF input
+     outPDF           the PDF output
+     horizontalPages  how many internal pages are in a row of an external page
+     verticalPages    how many internal pages are in a column of an external page
+     leftBorder       distance (in points) between left border of the external
+                      page and left border of first internal page
+     rightBorder      distance (in points) between left border of the external
+                      page and right border of first internal page
+     upBorder         distance (in points) between up border of the external page
+                      and up border of first internal page
+     downBorder       distance (in points) between up border of the external page
+                      and down border of first internal page
+     horizontalDelta  horizontal distance (in points) between two internal pages
+                      (from left border to left border)
+     verticalDelta    vertical distance (in points) between two internal pages
+                      (from top border to top border)
+   
+   optional parameters:
+     -h, --help       show this help message and exit
+
+   example:
+     python dividePDF.py input.pdf output.pdf 1 2 3 4 5 6 7 8
+
+Dependences:
+   python 2.7
+   pyPdf (http://pybrary.net/pyPdf/)
